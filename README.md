@@ -17,7 +17,7 @@ git clone https://github.com/oOBenjaminOo/compte-a-rebours.git
 cd compte-a-rebours
 ```
 
-Ensuite, puis servir son dossier avec Apache, Nginx ou un serveur statique. Pour un essai local avec Python 3 :
+Ensuite, servir le dossier avec Apache, Nginx ou un serveur statique. Pour un essai local avec Python 3 :
 
 ```sh
 python3 -m http.server 8080 --bind 127.0.0.1
