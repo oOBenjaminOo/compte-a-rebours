@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Paramètres du compte à rebours</title>
+  <link rel="stylesheet" href="countdown.css">
+  <link rel="stylesheet" href="parametres.css">
+</head>
+<body class="settings-page">
+  <main class="settings-shell">
+    <header class="settings-header">
+      <div>
+        <p class="settings-eyebrow">Compte à rebours</p>
+        <h1>Paramètres</h1>
+        <p class="settings-intro">Choisissez la date et l’heure de fin utilisées par le compteur sur ce navigateur.</p>
+      </div>
+      <a class="secondary-link" href="index.html">Voir le compteur</a>
+    </header>
+
+    <section class="settings-card" aria-labelledby="date-title">
+      <div class="settings-card-heading">
+        <div>
+          <h2 id="date-title">Date de fin</h2>
+          <p data-source-label></p>
+        </div>
+        <span class="source-badge" data-source-badge></span>
+      </div>
+
+      <form data-settings-form>
+        <label for="target-date">Date et heure</label>
+        <input id="target-date" name="target-date" type="datetime-local" step="60" required>
+
+        <div class="button-row">
+          <button class="primary-button" type="submit">Enregistrer</button>
+          <button class="secondary-button" type="button" data-reset>Rétablir la valeur par défaut</button>
+        </div>
+
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="preview-card" aria-labelledby="preview-title">
+      <div class="preview-heading">
+        <div>
+          <p class="settings-eyebrow">Aperçu</p>
+          <h2 id="preview-title">Résultat actuel</h2>
+        </div>
+        <p class="effective-date" data-effective-date></p>
+      </div>
+
+      <div class="preview-surface">
+        <div class="hc-board-wrap" data-countdown data-preview>
+          <div class="hc-board" data-board role="timer" aria-live="off"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="countdown.js"></script>
+  <script src="parametres.js"></script>
+</body>
+</html>

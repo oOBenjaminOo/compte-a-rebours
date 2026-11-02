@@ -1,0 +1,14 @@
+{
+  "name": "compte-a-rebours",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Compteur à volets animé avec page de paramètres, en HTML, CSS et JavaScript, sans dépendance externe.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check config.js && node --check countdown.js && node --check parametres.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
